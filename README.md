@@ -22,9 +22,3 @@ Si deseas probar el programa en tu computadora, sigue estos pasos:
 * Ejecuta el programa con el comando java verificador.
 
 Nota: si deseas probar con otros textos, cambia la línea que dice String codigo = “([])"; en el Main.
-
-Pruebas
-
-Aquí te dejo las capturas de pantalla de cuando estuve probando el código:
-
-* Todo salió bien: probé con ([]). El programa recorrió todo sin problemas porque cada cosa que se abrió se cerró correctamente.
