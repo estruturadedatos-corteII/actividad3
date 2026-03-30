@@ -1,35 +1,30 @@
 # actividad3
 Mi Proyecto: Verificador de Paréntesis y Llaves
-¡Hola! Este es un programa que hice en Java para resolver el típico problema de cuando programas y te falta cerrar un paréntesis o una llave. El código revisa una cadena de texto y te dice si todo está en orden o en qué parte metiste la pata.
 
-🧐 ¿Cómo funciona?
-Para que el programa sea ordenado, no usé las herramientas que ya trae Java, sino que armé mi propia Pila (Stack) desde cero usando Nodos.
+este es un programa que hice en Java para resolver el problema de cuando programas y te falta cerrar un paréntesis o una llave. El código revisa una cadena de texto y te dice si todo está en orden o en qué parte cometiste un error.
 
-La lógica es como una pila de platos:
+Cómo funciona? Para que el programa funcione de manera ordenada, no utilicé las herramientas que ya trae Java, sino que creé mi propia pila desde cero usando nodos.
 
-Cuando el código lee un símbolo que abre ((, [, {), lo empuja a la pila.
+La lógica es similar a una pila de platos: cuando el código lee un símbolo que abre, como paréntesis, corchetes o llaves, lo agrega a la pila. Lo interesante es que guardo no solo el símbolo, sino también la columna en la que se encuentra, para que sea fácil identificar el error.
 
-Lo padre es que guardo no solo el símbolo, sino también en qué columna está, para que sea fácil encontrar el error.
+Cuando encuentra un símbolo que cierra, saca el último que se agregó a la pila y verifica si coinciden. Si intentas cerrar algo que nunca abriste, o si cierras con el símbolo incorrecto, el programa te avisa de inmediato.
 
-Cuando encuentra uno que cierra (), ], }), saca el último que entró y checa si hacen "match".
+Cómo correr el programa
 
-Si intentas cerrar algo que nunca abriste, o si cierras con el símbolo equivocado, el programa te avisa de volada.
+Si deseas probar el programa en tu computadora, sigue estos pasos:
 
-🛠️ Cómo correrlo
-Si quieres probarlo en tu compu, solo haz esto:
+* Copia el código en un archivo llamado verificador.java.
 
-Copia el código en un archivo que se llame verificador.java.
+* Abre la terminal en la carpeta donde se encuentra el archivo.
 
-Abre la terminal en esa carpeta.
+* Compila el código con el comando javac verificador.java.
 
-Compila con: javac verificador.java.
+* Ejecuta el programa con el comando java verificador.
 
-Corre el programa con: java verificador.
+Nota: si deseas probar con otros textos, cambia la línea que dice String codigo = “([])"; en el Main.
 
-Nota: Si quieres probar otros textos, cambia la línea que dice String codigo = "([])"; en el Main.
+Pruebas
 
-📸 Pruebas (Evidencias)
-Aquí dejo las capturas de pantalla de cuando estuve testeando el código:
+Aquí te dejo las capturas de pantalla de cuando estuve probando el código:
 
-✅ Todo salió bien
-Aquí probé con ([]). El programa recorrió todo sin problemas porque cada cosa que se abrió, se cerró correctamente.
+* Todo salió bien: probé con ([]). El programa recorrió todo sin problemas porque cada cosa que se abrió se cerró correctamente.
